@@ -1,0 +1,264 @@
+/* fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inconsolata:wght@200;300&family=Merriweather+Sans:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*::-webkit-scrollbar {
+  display: none;
+  width: 4px;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    height: 0vh;
+    font-family:'Fuzzy Bubbles', Courier, monospace;
+}
+.main{
+    overflow: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+a{
+    text-decoration: none;
+    color: rgba(105, 237, 222, 0.525);
+}
+a:hover{
+    color: rgb(162, 162, 162);
+}
+nav{
+    background-color: rgb(97, 22, 76);
+    color: white;
+}
+.navContainer, .navItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navHeading{
+    display: flex;
+    align-items: center;
+}
+.navHeading h1{
+    padding: 0%;
+    margin: 0%;
+    font-size: 3rem;
+}
+.navItems{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2rem;
+    gap: 4rem;
+    padding-right: 2%;
+}
+
+
+main{
+    text-align: center;
+    padding-top: 30vh;
+}
+main input{
+    font-size: larger;
+    width: 60%;
+    border-radius: 30px;
+    padding: 1%;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 200, 255, 0.783);
+}
+main input::placeholder{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}   
+hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgba(214, 219, 219, 0.521);
+}
+
+.showsDiv{
+    display: flex;
+    padding: 1%;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.showsDiv img{
+    width: 100px;
+    /* height: 25%; */
+}
+.infoDiv{
+    text-align: left;
+    flex-grow: 1;
+    color: white;
+}
+.infoDiv p{
+    padding-left: 2%;
+    font-size: larger;
+}
+.infoDiv button{
+    cursor: pointer;
+    border-radius: 13px;
+    width: 96%;
+    margin: 1%;
+    color: white;
+    border: solid white;
+    font-size: larger;
+}
+.detailsBtn{
+    background-color: transparent;
+}
+.favouritsBtn{
+    background-color: rgba(2, 165, 2, 0.48);
+}
+.favouritsBtnRm{
+    background-color: rgba(255, 140, 0, 0.48) ;
+}
+
+
+main{
+    height: 100%;
+    flex-direction: column;
+}
+#searchDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.preInputDiv{
+    background-color: red;
+    position: relative;
+    right: -1.3rem;
+    display: inline-block;
+    height: 3rem;
+    width: 2rem;
+    transform: skew(-30deg);
+}
+
+.infoDiv button:hover{
+    color: black;
+    background-color: rgba(225, 225, 255);
+    box-shadow: 0 0 15px 0 white;
+}
+
+
+.containerDiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+.favCard{
+    width: 210px;
+    color: white;
+    background-color: rgb(22, 22, 22);
+    padding-bottom: 3%;
+}
+
+
+
+@keyframes downCard {
+    0%{
+        translate: 0 0px;
+    }
+    100%{
+        translate: 0 40px;
+    }
+}
+.mainDetail{
+    text-align: center;
+    overflow: hidden;
+}
+.mainCard{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border: solid;
+    width: 60%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    animation-name: downCard;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    height: 80vh;
+}
+.cardTop{
+    background-color: red;
+    padding: 10%;
+}
+.cardImg{
+    position: relative;
+}
+.cardImg img{
+    position: absolute;
+    width: 22%;
+    translate: -50% -50%;
+    border: solid black;
+    border-radius: 50%;
+}
+.cardName{
+    padding-top: 15%;
+    font-size: 3rem;
+}
+.cardFavBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin: 3%;
+    color: red;
+}
+.cardFavBtn:hover{
+    transition-duration: 1s;
+    scale: 2;
+}
+.cardFavBtn:active{
+    transition-duration: 0s;
+    font-size: 4rem;
+}
+.notificationDiv{
+    display: inline-block;
+    padding: 3%;
+    color: white;
+    background-color: green;
+    position: fixed;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 30vw;
+    top: 12%;
+    left: 50%;
+    translate: -50% 0;
+    opacity: 0;
+    transition-duration: 0.3s;
+    z-index: 4;
+}
+
+
+
+.favButton{
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: 2rem;
+    transition-duration: 1s;
+}
+.favButton:hover{
+    padding: 1px;
+    scale: 1.5;
+}
+.detailsBtnFav{
+    color: white;
+    background-color: transparent;
+    border: white solid 1px;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.detailsBtnFav:hover{
+    color: black;
+    background-color: rgba(225, 225, 255);
+    box-shadow: 0 0 15px 0 white;
+}

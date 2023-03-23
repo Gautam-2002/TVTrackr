@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="starsbg.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link  rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>TV Shows</title>
+</head>
+<body onload="getDetailedItem()">
+    <div class="notificationDiv"></div>
+    <nav>
+        <div class="navContainer">
+            <div class="navHeading">
+                <h1>
+                    🎊TVTrackr🎊
+                </h1>
+            </div>
+            <div class="navItems">
+                <div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div>
+                    <a href="favourits.html">Favrouites</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="mainDetail" >
+        <div class="containerDiv" style="padding-top: -100px;">
+            <div class="mainCard shadow">
+                <div class="cardTop"></div>
+                <div class="cardImg">
+                    <img src="">
+                </div>
+                <div class="cardName">
+
+                </div>
+                <button onclick='toggleFavoutitesDet(this)' class='favButtonDet cardFavBtn'></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bg animation -->
+    <link rel="stylesheet" href="starsbg.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--axios-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" defer></script>
+    <!--js-->
+    <script src="script.js" defer></script>
+    <title>Tv Shows</title>
+</head>
+
+<body>    
+    <div id="stars"></div>
+    <div class="notificationDiv"></div>
+    <!-- navigation bar -->
+    <nav>
+        <div class="navContainer">
+            <div class="navHeading">
+                <h1>
+                    🎊TVTrackr🎊
+                </h1>
+            </div>
+            <div class="navItems">
+                <div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div>
+                    <a href="favourits.html">Favrouites</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- main-div -->
+    <div class="main">
+    <main>
+        <div id="searchDiv">
+            <div class="preInputDiv"></div>
+            <input type="text" placeholder="example: Superman" onkeyup="handleSearchChange(this)">
+        </div>
+        <div id="displayDiv">
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>
